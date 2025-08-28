@@ -25,14 +25,14 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Medication Reminder App"
+              description="Developed a web-based app to help users manage and track medication schedules. Implemented Node.js, Express.js backend with MongoDB database.Integrated push notification service to send timely alerts to users.Built frontend using HTML, CSS, JavaScript ensuring a responsive design."
+              ghLink="https://vercel.com/patnam-mahendras-projects/pill-reminder"
+              demoLink="https://pill-reminder-two.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
@@ -86,7 +86,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
