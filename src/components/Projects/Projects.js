@@ -26,7 +26,7 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Medication Reminder App"
-              description="Developed a web-based app to help users manage and track medication schedules. Implemented Node.js, Express.js backend with MongoDB database.Integrated push notification service to send timely alerts to users.Built frontend using HTML, CSS, JavaScript ensuring a responsive design."
+              description="Engineered a web-based application to streamline medication management by developing a Node.js and Express.js backend with MongoDB, integrating push notifications for timely alerts, and designing a responsive frontend using HTML, CSS, and JavaScript."
               ghLink="https://vercel.com/patnam-mahendras-projects/pill-reminder"
               demoLink="https://pill-reminder-two.vercel.app/"
             />

@@ -13,26 +13,23 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
+      <div className="d-flex flex-wrap justify-content-center gap-3">
+  <Button variant="primary" href={props.ghLink} target="_blank">
+    <BsGithub /> &nbsp;
+    {props.isBlog ? "Blog" : "GitHub"}
+  </Button>
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+  {!props.isBlog && props.demoLink && (
+    <Button
+      variant="primary"
+      href={props.demoLink}
+      target="_blank"
+    >
+      <CgWebsite /> &nbsp; Demo
+    </Button>
+  )}
+</div>
 
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "40px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
       </Card.Body>
     </Card>
   );
